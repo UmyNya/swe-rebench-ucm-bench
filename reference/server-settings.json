@@ -1,0 +1,83 @@
+{
+  "ucm": {
+    "repository": "https://github.com/StorTecDev/ucm-prefetch",
+    "branch": "codex/ucm-deferred-pin-wait-v0.8.0",
+    "commit": "520428c4d2eaa23cb12e4d47d70a7bb820f8d4e0"
+  },
+  "software": {
+    "python": "3.12.3",
+    "vllm": "0.28.0",
+    "vllm_commit": "2cf0a6915",
+    "torch": "2.13.0+cu130",
+    "cuda": "13.0",
+    "transformers": "5.17.0"
+  },
+  "hardware": {
+    "gpu_model": "NVIDIA L20X",
+    "gpu_memory_mib": 143771,
+    "driver": "580.105.08",
+    "shared_memory_gib": 32,
+    "ssd_model": "SAMSUNG MZQL23T8HCLS-00BAL"
+  },
+  "environment": {
+    "ENABLE_UCM_PATCH": "1",
+    "GLM51_LAYERWISE_SYNC_FIX": "1"
+  },
+  "model": {
+    "repository": "zai-org/GLM-5.2-FP8",
+    "revision": "f33c6dc501ee5a2c7e35155653b1b1abbc320951",
+    "layers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "weights": "Original FP8 first-14-layer checkpoint plus embedding, final norm and output head; model path is supplied by the user"
+  },
+  "vllm": {
+    "host": "127.0.0.1",
+    "port": 18147,
+    "served_model_name": "glm52-mixed",
+    "seed": 20260911,
+    "hf_overrides": {
+      "num_hidden_layers": 14,
+      "num_nextn_predict_layers": 0
+    },
+    "speculative_config": null,
+    "data_parallel_size": 1,
+    "tensor_parallel_size": 1,
+    "pipeline_parallel_size": 1,
+    "enable_expert_parallel": true,
+    "enable_prefix_caching": true,
+    "enable_chunked_prefill": true,
+    "max_num_batched_tokens": 8192,
+    "max_num_seqs": 16,
+    "max_model_len": 131072,
+    "gpu_memory_utilization": 0.92,
+    "kv_cache_memory_bytes": 5372160000,
+    "kv_cache_dtype": "auto",
+    "safetensors_load_strategy": "lazy",
+    "async_scheduling": false
+  },
+  "expected_automatic_layout": {
+    "block_size": 64,
+    "num_blocks": 5000,
+    "block_size_is_user_specified": false,
+    "enforce_eager": false,
+    "compilation_mode": 3,
+    "cudagraph_mode": "FULL_AND_PIECEWISE",
+    "physical_shard_bytes": 86016,
+    "physical_block_bytes": 1204224
+  },
+  "scope": "Reference settings for a user-managed service; the benchmark client does not launch, stop, install or configure services."
+}

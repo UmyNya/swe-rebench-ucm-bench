@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv*/
+.pytest_cache/
+results/
+runs/
+local/
+private/
+prompt-snapshots/
+*.local.json
+.env
+.env.*
+cache/
+data/original/prompts/
+workloads/custom*/
+*.log
+*.jsonl.gz

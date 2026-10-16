@@ -1,0 +1,14 @@
+{
+  "source_repository": "https://github.com/StorTecDev/swe-rebench-ucm-repro",
+  "commit": "668c078b2d94ab14f697d53adcc77cb6ca43fb56",
+  "license": "MIT; see licenses/UCM-MIT.txt",
+  "original_file_sha256": {
+    "benchmark_swe_rebench_closed_loop.py": "51720498495c13761429545b36fbbbe0bac775b65ce657eaa5e24b76ed426621",
+    "benchmark_swe_rebench_open_loop.py": "dbe43147249367ed83fded92577bf2f5792db18a9c3909a6ee9fb6c2808b3980"
+  },
+  "adaptations": [
+    "Split the inherited sender into focused modules with explicit imports.",
+    "Allow any positive client concurrency and positive requested output length.",
+    "Further portability, local prompt snapshots and request-side configuration changes are documented in the repository."
+  ]
+}

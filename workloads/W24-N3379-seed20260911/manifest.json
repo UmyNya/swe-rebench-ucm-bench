@@ -1,0 +1,132 @@
+{
+  "source": {
+    "trajectory_count": 100,
+    "body_prompt_tokens": {
+      "count": 3379,
+      "minimum": 64015,
+      "mean": 87225.759988,
+      "p50": 86610.0,
+      "p95": 111131.0,
+      "p99": 116980.18,
+      "maximum": 121887
+    },
+    "salted_prompt_tokens": {
+      "count": 3379,
+      "minimum": 64067,
+      "mean": 87278.024268,
+      "p50": 86662.0,
+      "p95": 111185.5,
+      "p99": 117032.3,
+      "maximum": 121939
+    },
+    "tokenizer": "data/original/inputs/tokenizer",
+    "prompt_salt_scope": "trajectory",
+    "request_count": 3379,
+    "text_bytes": 1185421774,
+    "order_sha256": "9cf0b970efa0bc4bb1c755f0ab0cf6d8dfea67eb216c894603064f280eb99392",
+    "source_ucm_commit": "d6a465446ae4676f357754f4a19e98bfa4e0e66e",
+    "text_role": "decoded exact replay input token IDs; special tokens retained; use source loader for exact token replay"
+  },
+  "source_tokenization": {
+    "tokenizer": "inputs/tokenizer",
+    "tokenizer_json_sha256": "19e773648cb4e65de8660ea6365e10acca112d42a854923df93db4a6f333a82d",
+    "chat_template": "inputs/tokenizer/chat_template.jinja",
+    "chat_template_sha256": "172dc74a35e1752df75ecfb2b2cf9326d2852bb1379868ebeec9571654489679",
+    "effective_chat_template_sha256": "172dc74a35e1752df75ecfb2b2cf9326d2852bb1379868ebeec9571654489679",
+    "tools_sha256": "d13c473da05d5cd18f6d2fb23146015585f4159fb64cb819fdc9dd8948caae9d"
+  },
+  "outputs": {
+    "order": {
+      "path": "order.jsonl",
+      "sha256": "91219658df8a0071335a7d363399de2d5dc53e9d956b344b6f5f5115cd2734d2"
+    },
+    "profiles": {
+      "path": "profiles.jsonl",
+      "sha256": "3bfea5e2bf692383c7612e0a7118a523c4379e06bbead94d74532e9d643c2628"
+    }
+  },
+  "interleaving": {
+    "seed": 20260911,
+    "active_sessions": 24,
+    "prompt_salt_label": "swe-real-20260911",
+    "primer_included": false,
+    "method": "vendor causal_merge stochastic renewal",
+    "virtual_min_delay": 0.5,
+    "virtual_median_delay": 1,
+    "virtual_delay_sigma": 0.6
+  },
+  "profile_summary": {
+    "trajectories": 100,
+    "measured_requests": 3379
+  },
+  "reuse": {
+    "adjacent_added_body_tokens": {
+      "count": 3279,
+      "minimum": 67,
+      "mean": 1324.879,
+      "p50": 644.0,
+      "p95": 5448.1,
+      "maximum": 21360
+    },
+    "reusable_prefix_ratio": {
+      "count": 3279,
+      "minimum": 0.8157143226897426,
+      "mean": 0.985,
+      "p50": 0.992,
+      "p95": 0.998,
+      "maximum": 0.999367232065279
+    },
+    "weighted_reusable_prefix_ratio": 0.98493482,
+    "same_trajectory_intervening_requests": {
+      "count": 3279,
+      "minimum": 0,
+      "mean": 21.604,
+      "p50": 20.0,
+      "p95": 42.0,
+      "maximum": 130
+    },
+    "same_trajectory_intervening_sessions": {
+      "count": 3279,
+      "minimum": 0,
+      "mean": 16.673,
+      "p50": 17.0,
+      "p95": 23.0,
+      "maximum": 28
+    },
+    "same_trajectory_intervening_query_tokens": {
+      "count": 3279,
+      "minimum": 0,
+      "mean": 1869231.75,
+      "p50": 1688719.0,
+      "p95": 3635567.1,
+      "maximum": 11611708
+    },
+    "same_trajectory_intervening_distinct_prefix_tokens": {
+      "count": 3279,
+      "minimum": 0,
+      "mean": 1446575.342,
+      "p50": 1499078.0,
+      "p95": 2049438.4,
+      "maximum": 2547349
+    }
+  },
+  "lengths": {
+    "count": 3379,
+    "minimum": 64106,
+    "mean": 87340.521,
+    "p50": 86734.0,
+    "p95": 111275.6,
+    "maximum": 122013
+  },
+  "template_length_difference_all_exported_calls": {
+    "count": 3379,
+    "minimum": 30,
+    "mean": 70.497,
+    "p50": 70.0,
+    "p95": 95.0,
+    "maximum": 100
+  },
+  "policy": "Original contiguous selected history windows, causal manifest prefix; no constructed primer. Virtual times define order only; client C8 closed loop.",
+  "max_model_len": 131072,
+  "portability_note": "Machine-specific metadata paths replaced with repository-relative references; order, profiles and request token content are unchanged."
+}

@@ -1,0 +1,23 @@
+{
+  "ucm_connectors": [
+    {
+      "ucm_connector_name": "UcmPipelineStore",
+      "ucm_connector_config": {
+        "store_pipeline": "Cache|Posix",
+        "storage_backends": "local/l2/off",
+        "io_direct": true,
+        "posix_io_engine": "aio",
+        "share_buffer_enable": true,
+        "cache_buffer_capacity_gb": 19,
+        "posix_capacity_gb": 128
+      }
+    }
+  ],
+  "enable_early_prefetch": false,
+  "use_layerwise": true,
+  "enable_event_sync": true,
+  "early_owner_max_jobs": 16,
+  "enable_record_traces": false,
+  "use_lite": false,
+  "persist_token_threshold": 0
+}

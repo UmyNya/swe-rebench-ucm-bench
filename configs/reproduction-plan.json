@@ -1,0 +1,26 @@
+{
+  "workloads": [
+    "W24",
+    "W32"
+  ],
+  "requests_per_arm": 3379,
+  "client_concurrency": 8,
+  "output_tokens": 1,
+  "seed": 20260911,
+  "rounds": 3,
+  "arm_order": [
+    "OFF",
+    "ON"
+  ],
+  "calibration_requests": {
+    "W24": 192,
+    "W32": 256
+  },
+  "protocol": "completion-driven closed-loop, strict manifest order, same-trajectory dependencies",
+  "fresh_service_and_empty_kv_per_arm": true,
+  "one_unrelated_warmup_excluded": true,
+  "generated_responses_appended_to_history": false,
+  "formal_measurement_compilation_allowed": false,
+  "comparison_policy": "Compare valid paired runs and report observed variation; no universal numeric tolerance is assumed.",
+  "service_management": "external"
+}

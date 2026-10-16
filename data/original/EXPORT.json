@@ -1,0 +1,28 @@
+{
+  "trajectory_count": 100,
+  "body_prompt_tokens": {
+    "count": 3379,
+    "minimum": 64015,
+    "mean": 87225.759988,
+    "p50": 86610.0,
+    "p95": 111131.0,
+    "p99": 116980.18,
+    "maximum": 121887
+  },
+  "salted_prompt_tokens": {
+    "count": 3379,
+    "minimum": 64067,
+    "mean": 87278.024268,
+    "p50": 86662.0,
+    "p95": 111185.5,
+    "p99": 117032.3,
+    "maximum": 121939
+  },
+  "tokenizer": "inputs/tokenizer",
+  "prompt_salt_scope": "trajectory",
+  "request_count": 3379,
+  "text_bytes": 1185421774,
+  "order_sha256": "9cf0b970efa0bc4bb1c755f0ab0cf6d8dfea67eb216c894603064f280eb99392",
+  "source_ucm_commit": "d6a465446ae4676f357754f4a19e98bfa4e0e66e",
+  "text_role": "decoded exact replay input token IDs; special tokens retained; use source loader for exact token replay"
+}
